@@ -2,7 +2,7 @@
 
 if (jQuery.browser.mobile == true) {
     
-    var imageUrl = "images/cool-background.png";
+    var imageUrl = "images/bookkeeping.jpg";
     $("body").css("background-image", "url(" + imageUrl + ")");
     $("body").css("background-size","cover")
     $("body").css("background-attachment","fixed")
