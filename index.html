@@ -51,7 +51,15 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-135027522-2');
 	</script>
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -94,7 +102,7 @@
 
 <body id="body"
 	style="background-image: url('images/Screenshot (6).jpg');background-size: cover;background-attachment: fixed;">
-	
+
 	<!-- main banner -->
 	<div class="main-top" id="home">
 		<!-- header -->
@@ -138,10 +146,20 @@
 						</nav>
 					</div>
 					<!-- //nav -->
-					<a class="btn" href="http://mail.borkarandborkar.com/interface/root" target="_blank"
-						style="background-color: #705ecf;color:white">
-						<span class="fa fa-user"> </span> Login
-					</a>
+					<div class="dropdown show">
+						<a class="btn btn-secondary dropdown-toggle nav-item " href="#" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							style="background-color: #705ecf;color:white">
+							<span class="fa fa-user"> </span> Login
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="https://www.cadashboard.com/" target="_blank" style="color: #705ecf;"><em class="fa fa-pie-chart"></em>
+								Dashboard</a>
+							<a class="dropdown-item" href="http://mail.borkarandborkar.com/interface/root"
+								target="_blank" style="color: #705ecf;"><em class="fa fa-envelope"></em>
+								Email</a>
+						</div>
+					</div>
 				</div>
 			</div>
 	</div>
@@ -167,7 +185,7 @@
 	<!-- //main banner -->
 	<hr>
 	<!-- services -->
-	<section class="banner-bottom-w3layouts bg-transparent py-5" id="services" >
+	<section class="banner-bottom-w3layouts bg-transparent py-5" id="services">
 		<div class="container">
 			<h3 class="tittle text-center font-weight-bold">Our Services</h3>
 			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">Our wide range of serivces include: </p>
